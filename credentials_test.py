@@ -16,3 +16,19 @@ class TestCredentials(unittest.TestCase):
         Method that cleans up after each test
         """
         Credentials.credentials_list = []
+
+def test_init(self):
+        """
+        Test for correct initialization
+        """
+        self.assertEqual(self.new_credentials.account_name,"Github")
+        self.assertEqual(self.new_credentials.username,"Kibet1816")
+        self.assertEqual(self.new_credentials.password,"@#soccerkibe1816")
+
+    def test_save_credentials(self):
+        """
+        Test to check whether app saves account credentials
+        """
+        self.new_credentials.save_credentials()
+        self.assertEqual(len(Credentials.credentials_list),1)
+		
