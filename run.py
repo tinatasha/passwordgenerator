@@ -129,4 +129,18 @@ def main():
                 else:
                     print('Sorry :( .The command doesn\'t exist.Try again with :li' )
                     print('-'*8)
+					
+					 elif short_code == 'ex':
+            print("Hope you enjoyed the application.")
+            break
+
+
+        else:
+            print('\n')
+            print("Sorry :( .The command does not exist.Try again with :li")
+            print('-'*8)
+            print('\n')
+
+if __name__ == '__main__':
+    main()
 	
