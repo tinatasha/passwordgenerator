@@ -15,3 +15,11 @@ def create_login(firstname,lastname,password):
     """
     new_credentials = Credentials(accname,username,password)
     return new_credentials
+
+def save_user(user):
+    """
+    Function to save user login details
+    """
+    user.save_user()
+	
+	
