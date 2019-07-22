@@ -34,3 +34,11 @@ def save_user(user):
     """
     password = Credentials.generate_password()
     return password
+	
+	def display_credentials():
+    """
+    Function to display account and credentials
+    """
+    return Credentials.display_credentials()
+	
+	
