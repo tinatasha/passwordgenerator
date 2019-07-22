@@ -27,3 +27,10 @@ def save_user(user):
     Function to save account details
     """
     account.save_credentials()
+	
+	def generate_password():
+    """
+    Function to create a password automatically
+    """
+    password = Credentials.generate_password()
+    return password
