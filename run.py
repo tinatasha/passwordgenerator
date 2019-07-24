@@ -8,8 +8,8 @@ def create_login(firstname,lastname,password):
     """
     new_user = User(firstname,lastname,password)
     return new_user
-	
-	def add_account(accname,username,password):
+
+def add_account(accname,username,password):
     """
     Function to add a new account and its credentials
     """
@@ -21,27 +21,28 @@ def save_user(user):
     Function to save user login details
     """
     user.save_user()
-	
-	def save_credential(account):
+
+def save_credential(account):
     """
     Function to save account details
     """
     account.save_credentials()
-	
-	def generate_password():
+
+def generate_password():
     """
     Function to create a password automatically
     """
     password = Credentials.generate_password()
     return password
-	
-	def display_credentials():
+
+
+def display_credentials():
     """
     Function to display account and credentials
     """
     return Credentials.display_credentials()
-	
-	def del_account(credential):
+
+def del_account(credential):
     """
     Function to delete an account
     """
@@ -51,8 +52,8 @@ def main():
     # print("Welcome to password locker :)")
     # print("What\'s your name?")
     # name = input()
-	
-	while True:
+
+    while True:
 
         print(f"Hello.Please use the short codes :li to create your password locker account :ex - To exit the application")
     
@@ -118,29 +119,29 @@ def main():
                             print('-' * 20)
                             print(f" Account name >> {credential.account_name}  \n Username >> {credential.username} \n password >> {credential.password}")
                             print('-' * 20)
-							
-							elif shorter_code == 'dl':
+                            
+                elif shorter_code == 'dl':
                     pass
 
                 elif shorter_code == 'lo':
-                    print('Thank you for using this app :)')
+                    print('Yasssssssssssssssssssssss')
                     break
 
                 else:
-                    print('Sorry :( .The command doesn\'t exist.Try again with :li' )
+                    print('Sorry. The command doesn\'t exist. Try again with :li' )
                     print('-'*8)
-					
-					 elif short_code == 'ex':
+
+        elif short_code == 'ex':
             print("Hope you enjoyed the application.")
             break
 
 
         else:
             print('\n')
-            print("Sorry :( .The command does not exist.Try again with :li")
+            print("Sorry. The command does not exist. Try again with :li")
             print('-'*8)
             print('\n')
 
 if __name__ == '__main__':
     main()
-	
+    
