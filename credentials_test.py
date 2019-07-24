@@ -9,7 +9,7 @@ class TestCredentials(unittest.TestCase):
         """
         Setup method that defines instructions
         """
-        self.new_credentials = Credentials("Github","Kibet1816","@#soccerkibe1816")
+        self.new_credentials = Credentials("Github","Tina","blackfaffp1")
 
     def tearDown(self):
         """

@@ -124,7 +124,7 @@ def main():
                     pass
 
                 elif shorter_code == 'lo':
-                    print('Yasssssssssssssssssssssss')
+                    print('Yes')
                     break
 
                 else:
@@ -132,7 +132,7 @@ def main():
                     print('-'*8)
 
         elif short_code == 'ex':
-            print("Hope you enjoyed the application.")
+            print("Hope you liked it.")
             break
 
 
